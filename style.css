@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(253, 253, 252);
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+    
+}
+.container{
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+.insta-l{
+    width: 450px;
+    margin-left: -40px;
+   
+}
+.insta-l img{
+    width: 95%;
+   
+}
+.secund{
+    position: relative;
+    width: 55%;
+    
+}
+.secund img{
+    position: absolute;
+    bottom: 66px;
+    left: 140px;
+    height: 500px;
+
+  
+}
+.secund .img-01, .img-02, .img-03{
+  opacity: 0;
+  transition: opacity 2000ms;
+  
+}
+.secund img.selected{
+   opacity: 1;
+}
+
+/*.img-01{
+    position:relative;
+    bottom: 562px;
+    left: 144px;
+}
+.img-02{
+    position:relative;
+    bottom: 1066px;
+    left: 144px;
+    height: 501px;
+}
+.img-03{
+    position:relative;
+    bottom: 1571px;
+    left: 144px;
+    height: 501px;
+}*/
+
+.insta-r{
+    margin-top: 10px;
+    width: 320px;
+    height: 365px;
+    margin-left: -25px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+   
+}
+.insta-r input{
+    display: block;
+    width: 240px;
+    height: 35px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    padding: 5px;
+    background: rgb(252, 252, 252);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+   
+    
+
+}
+.insta-r input::placeholder{
+    color: rgb(187, 186, 186);
+}
+input:nth-child(3){
+    background: rgb(28, 152, 240);
+    opacity: .5;
+    height: 30px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: .5;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+.logo{
+   margin-top: 35px;
+   margin-bottom: 35px;
+}
+.apps img{
+    width: 40%;
+}
+.apps{
+    text-align: center;
+}
+.gap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid{
+    font-size: 11px;
+    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color: rgb(162, 162, 162);
+    text-transform: uppercase;
+    margin: 10px 10px;
+}
+.risc-1{
+    height: 1px;
+    width: 115px;
+    background: rgb(220, 220, 220);
+}
+
+.risc-2{
+    height: 1px;
+    width: 115px;
+    background: rgb(220, 220, 220);
+
+}
+.face-img{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.face-img span{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(30, 30, 157);
+    margin-left: 10px;
+}
+a p{
+    font-size: 12px;
+    color: rgb(74, 74, 74);
+}
+.login-2{
+    margin-top: 20px;
+    background: white;
+    width: 320px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+.login-2 span{
+    color: rgb(28, 152, 240);
+    font-weight: 500;
+}
+.insta-r div + p{
+    margin: 15px 0 ;
+    font-size: 13px;
+}
+footer{
+    height: 100px;
+}
+.links{
+    width: 68%;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 2;
+
+    
+    
+    
+}
+.links a{
+    margin-right: 10px;
+    
+   
+
+}
+.links p{
+    font-size: 11px;
+    color: rgb(155, 155, 155);
+    
+   
+}
+.op{
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(155, 155, 155);
+
+}
+.op select{
+    font-size: 11px;
+    border: none;
+    background: none;
+    color: rgb(155, 155, 155);
+    cursor: pointer;
+
+}
+.op span{
+    font-size: 11px;
+}
+
+@media screen and (max-width: 870px){
+    .container{
+       margin: 30px auto 50px;
+       height: 525px;
+    }
+    .insta-l {
+        display: none;
+    }
+    .insta-r{
+        margin-left: 0;
+
+    }
+    .links{
+        margin: 0 auto;
+
+    }
+    .apps{
+        margin-bottom: 0px;
+    }
+    .links{
+        width: 80%;
+    }
+    footer{
+        height: 155px;
+    }
+   
+   
+    
+}
+    
